@@ -20,10 +20,10 @@
     <h2>Todo List</h2>
 
     <!--追加-->
-    <div class="writespace-block">
+    <form class="writespace-block" action="#" method="post">
       <input class="create-text" type="text" name="create">
-      <a href="" class="create-button">追加</a>
-    </div>
+      <input class="create-button" type="submit" value="追加">
+    </form>
     <!--追加-->
 
 
@@ -35,40 +35,15 @@
     <th>更新</th>
     <th>削除</th>
   </tr>
+
+  <form action="#" method="post">
   <tr>
     <td>2021-09-17 06:35:23</td>
-    <td><input class="task-space" type="text" name="task-space"></td>
-    <td><a href="#" class="update">更新</a></td>
-    <td><a href="#" class="delete">削除</a></td>
+    <td><input class="task-space" type="text"></td>
+    <td><input class="update" type="submit"  value="更新"> </td>
+    <td><input class="delete" type="submit"  value="削除"></td>
   </tr>
-
-  <tr>
-  <td>2021-09-17 08:55:23</td>
-  <td><input class="task-space" type="text" name="task-space"></td>
-  <td><a href="#" class="update">更新</a></td>
-  <td><a href="#" class="delete">削除</a></td>
-  </tr>
-
-  <tr>
-  <td>2021-09-18 07:25:32</td>
-  <td><input class="task-space" type="text" name="task-space"></td>
-  <td><a href="#" class="update">更新</a></td>
-  <td><a href="#" class="delete">削除</a></td>
-  </tr>
-
-  <tr>
-  <td>2021-09-18 06:35:23</td>
-  <td><input class="task-space" type="text" name="task-space"></td>
-  <td><a href="#" class="update">更新</a></td>
-  <td><a href="#" class="delete">削除</a></td>
-  </tr>
-
-    <tr>
-      <td>2021-09-18 06:35:23</td>
-      <td><input class="task-space" type="text" name="task-space"></td>
-      <td><a href="#" class="update">更新</a></td>
-      <td><a href="#" class="delete">削除</a></td>
-    </tr>
+</form>
 
 </table>
     <!--タスク-->

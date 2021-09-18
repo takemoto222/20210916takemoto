@@ -1,4 +1,5 @@
 /*背景*/
+
 .background {
   background-color: #260d73;
   width: 100%;
@@ -45,8 +46,13 @@ h2 {
   border-radius: 5px;
   font-size: 13px;
   font-weight: bold;
-  text-decoration: none;
   margin-right: 20px;
+  background-color: #fff;
+}
+
+.create-button:hover {
+  background-color: #df86f7;
+  color: #fff;
 }
 /*追加*/
 
@@ -80,9 +86,13 @@ th {
   border-radius: 5px;
   font-size: 13px;
   font-weight: bold;
-  text-decoration: none;
+  background-color: #fff;
 }
 
+.update:hover {
+  background-color: #f49c65;
+  color: #fff;
+}
 .delete {
   border: 2px solid #99f9ee;
   color: #99f9ee;
@@ -90,7 +100,11 @@ th {
   border-radius: 5px;
   font-size: 13px;
   font-weight: bold;
-  text-decoration: none;
+  background-color: #fff;
 }
 
+.delete:hover {
+  background-color: #99f9ee;
+  color: #fff;
+}
 /*タスク table*/
