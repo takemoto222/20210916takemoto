@@ -3,23 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
-class TodoController extends Controller
+class AuthorController extends Controller
 {
     public function index()
     {
-        $item = [
-            'content' => '自由に入力してください',
-        ];
-        return view('index', $item);
+        $items = DB::select('select * from authors');
+        return view('index', ['items' => $items]);
     }
-    public function post(Request $request)
-    {
-        $content = $request->content;
-        $item = [
-            'content' => $content . 'と入力しましたね'
-        ];
-        return view('index', $item);
-    }
-
 }

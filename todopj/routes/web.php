@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\TodoController;
 
 
-Route::get('/', [AuthorController::class, 'index']);
+Route::get('/', [TodoController::class, 'index']);
