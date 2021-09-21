@@ -16,7 +16,7 @@
     <h2>Todo List</h2>
 
     <!--追加-->
-    <form class="writespace-block" action="#" method="post">
+    <form class="writespace-block" action="/" method="post">
       <input class="create-text" type="text" name="create">
       <input class="create-button" type="submit" value="追加">
     </form>
@@ -33,16 +33,16 @@
   </tr>
 
   <tr>
-    <form action="#" method="post">
-    <td>2021-09-17 06:35:23</td>
+    <form action="/" method="post">
+    <td><!--時刻を埋め込む--></td>
     </form>
-    <form action="#" method="post">
+    <form action="/" method="post">
     <td><input class="task-space" type="text"></td>
     </form>
-    <form action="#" method="post">
+    <form action="/edit" method="post">
     <td><input class="update" type="submit"  value="更新"> </td>
     </form>
-    <form action="#" method="post">
+    <form action="/" method="post">
     <td><input class="delete" type="submit"  value="削除"></td>
     </form>
   </tr>

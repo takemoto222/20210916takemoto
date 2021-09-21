@@ -116,6 +116,41 @@ th {
 
 @section('content')
 
+<form action="/" method="post">
+    @csrf
+ <input class="create-text" type="text" name="create">
+<input class="create-button" type="submit" value="追加">
+
+</form>
+
+
+    <!--タスク-->
+<table>
+  <tr class="tasc-title-tr">
+    <th>作成日</th>
+    <th>タスク名</th>
+    <th>更新</th>
+    <th>削除</th>
+  </tr>
+
+  <tr>
+    <form action="/" method="post">
+    <td>2021-09-17 06:35:23</td>
+    </form>
+    <form action="/" method="post">
+    <td><input class="task-space" type="text"></td>
+    </form>
+    <form action="/edit" method="post">
+    <td><input class="update" type="submit"  value="更新"> </td>
+    </form>
+    <form action="/" method="post">
+    <td><input class="delete" type="submit"  value="削除"></td>
+    </form>
+  </tr>
+
+
+</table>
+    <!--タスク-->
 
 
 @endsection
