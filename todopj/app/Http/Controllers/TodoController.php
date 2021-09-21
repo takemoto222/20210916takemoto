@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Todo;
-use Illuminate\Support\Facades\DB;
+
 
 class TodoController extends Controller
 {
@@ -16,11 +16,11 @@ class TodoController extends Controller
     }
     public function create(Request $request)
     {
-        $param = [
-            'content' => $request->content,
-        ];
-        DB::table('todos')->insert($param);
+        $this->validate($request, Todo::$rules);
+        $form = $request->all();
+        Todo::create($form);
         return redirect('/');
+
     }
     public function edit(Request $request)
     {

@@ -36,13 +36,13 @@
     <form action="/" method="post">
     <td><!--時刻を埋め込む--></td>
     </form>
-    <form action="/" method="post">
+    <form action="/add" method="post">
     <td><input class="task-space" type="text"></td>
     </form>
     <form action="/edit" method="post">
     <td><input class="update" type="submit"  value="更新"> </td>
     </form>
-    <form action="/" method="post">
+    <form action="/delete" method="post">
     <td><input class="delete" type="submit"  value="削除"></td>
     </form>
   </tr>
