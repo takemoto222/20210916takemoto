@@ -18,5 +18,5 @@ class TodoController extends Controller
     {
         return view('add');
     }
-    
+
 }

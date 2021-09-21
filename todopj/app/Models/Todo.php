@@ -9,7 +9,7 @@ class Todo extends Model
 {
     public function getDetail()
     {
-                $txt = 'ID:'.$this->id . ' ' . $this->content . '(' ;
+        $txt = 'ID:'.$this->id . ' ' . $this->content . '(' ;
         return $txt;
     }
 }
