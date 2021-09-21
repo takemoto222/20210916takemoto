@@ -124,6 +124,7 @@ th {
 
 
     <form action="/" method="get">
+    @csrf
   <tr>
 <!--日付-->
 

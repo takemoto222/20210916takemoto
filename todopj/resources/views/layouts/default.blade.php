@@ -17,6 +17,7 @@
 
     <!--追加-->
     <form class="writespace-block" action="/" method="post">
+     @csrf
       <input class="create-text" type="text" name="create">
       <input class="create-button" type="submit" value="追加">
     </form>
@@ -34,15 +35,19 @@
 
   <tr>
     <form action="/" method="post">
+         @csrf
     <td><!--時刻を埋め込む--></td>
     </form>
     <form action="/add" method="post">
+         @csrf
     <td><input class="task-space" type="text"></td>
     </form>
     <form action="/edit" method="post">
+         @csrf
     <td><input class="update" type="submit"  value="更新"> </td>
     </form>
     <form action="/delete" method="post">
+         @csrf
     <td><input class="delete" type="submit"  value="削除"></td>
     </form>
   </tr>
