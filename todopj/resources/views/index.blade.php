@@ -118,7 +118,7 @@ th {
 @section('content')
 
 
-
+<table>
   @foreach ($items as $item)
   <tr>
     <!--日付-->
@@ -140,7 +140,7 @@ th {
 
   </tr>
 @endforeach
-
+</table>
 
     </form>
 
