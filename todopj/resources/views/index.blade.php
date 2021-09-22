@@ -118,9 +118,9 @@ th {
 
 <form action="/" method="post">
     @csrf
- <input class="create-text" type="text" name="create">
+ <input class="create-text" type="text" name="content">
 
-</form>
+
 
 
     <form action="/" method="get">
@@ -132,7 +132,7 @@ th {
 
 <!--タスク入力結果-->
 
-    <td><input class="task-space" type="text" name="name"></td>
+    <td><input class="task-space" type="text" name="create"></td>
 
 <!--更新ボタン-->
 
@@ -141,11 +141,12 @@ th {
 <!--削除ボタン-->
 
     <td><input class="delete" type="submit"  ></td>
- 
+
   </tr>
 
 
 </table>
+    </form>
     </form>
     <!--タスク-->
 
