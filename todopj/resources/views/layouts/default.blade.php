@@ -34,7 +34,7 @@
   </tr>
 
   <tr>
-    <form action="/" method="post">
+    <form action="/" method="get">
       @csrf
     <td><!--時刻を埋め込む--></td>
     </form>
