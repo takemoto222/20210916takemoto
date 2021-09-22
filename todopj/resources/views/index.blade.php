@@ -114,16 +114,12 @@ th {
 </style>
 @section('title', 'index.blade.php')
 
+
 @section('content')
 
-<form action="/" method="post">
-    @csrf
- <input class="create-text" type="text" name="content">
-    </form>
 
 
-
-<table>
+  @foreach ($items as $item)
   <tr>
     <!--日付-->
     <form action="/" method="get">
@@ -131,9 +127,9 @@ th {
     <td><!--日付埋め込む--></td>
 
 <!--タスク入力結果-->
-@foreach ($items as $item)
-    <td><input class="task-space" type="text" name="content"></td>
-@endforeach
+
+    <td><input class="task-space" type="text" name="content" value="{{$item->content}}"></td>
+
 <!--更新ボタン-->
 
     <td><input class="update" type="submit" name="update"> </td>
@@ -143,9 +139,9 @@ th {
     <td><input class="delete" type="submit"  ></td>
 
   </tr>
+@endforeach
 
 
-</table>
     </form>
 
     <!--タスク-->
