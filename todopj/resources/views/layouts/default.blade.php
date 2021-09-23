@@ -33,6 +33,8 @@
     <th>削除</th>
   </tr>
 
+
+      @yield('content')
   <tr>
     <form action="/" method="get">
       @csrf
@@ -60,7 +62,7 @@
 </div>
 
 
-    @yield('content')
+
     </div>
 </body>
 </html>

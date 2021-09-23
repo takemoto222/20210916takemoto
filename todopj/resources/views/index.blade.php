@@ -140,11 +140,12 @@ th {
 
   </tr>
 @endforeach
+
 </table>
 
     </form>
-
+@endsection
     <!--タスク-->
 
 
-@endsection
+
