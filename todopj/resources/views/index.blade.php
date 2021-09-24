@@ -2,11 +2,8 @@
 <style>
 /*背景*/
 
-.background {
+body {
   background-color: #260d73;
-  width: 100%;
-
-  position: absolute;
 }
 
 /*メイン*/
@@ -14,9 +11,7 @@
   width: 750px;
   border-radius: 12px;
   background-color: #fff;
-  margin: 0 auto;
-  position: relative;
-  top: 25%;
+  margin:15% auto;
   padding: 10px;
   box-shadow: #2f2f2e 2px 2px;
 }
@@ -29,7 +24,7 @@ h2 {
 /*追加*/
 .writespace-block {
   height: 35px;
-  border-radius: 5px;
+  border-radius: 5px
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -62,7 +57,7 @@ h2 {
 table {
   width: 100%;
   text-align: center;
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 td {
@@ -71,7 +66,7 @@ td {
 
 /*作成日　タスク名　削除　更新*/
 th {
-  padding: 15px 10px 30px;
+  padding: 10px 10px 15px;
 }
 
 .task-space {
@@ -132,7 +127,7 @@ th {
 
 <!--更新ボタン-->
 
-    <td><input class="update" type="submit" name="update"> </td>
+    <td><input class="update" type="submit" name="update" value> </td>
 
 <!--削除ボタン-->
 

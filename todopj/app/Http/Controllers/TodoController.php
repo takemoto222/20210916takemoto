@@ -31,7 +31,6 @@ class TodoController extends Controller
     public function update(Request $request)
     {
         $param = [
-            'id' => $request->id,
             'content' => $request->content,
         ];
         DB::table('todos')->where('id', $request->id)->update($param);
