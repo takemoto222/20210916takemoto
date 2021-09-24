@@ -15,6 +15,7 @@ class TodoController extends Controller
         $items = Todo::all();
         return view('index', ['items' => $items]);
     }
+
     public function create(Request $request)
     {
         $this->validate($request, Todo::$rules);
@@ -23,28 +24,34 @@ class TodoController extends Controller
         return redirect('/');
 
     }
+
+
+
     public function edit(Request $request)
     {
-        $item = DB::table('todos')->where('id', $request->id)->first();
-        return view('edit', ['form' =>$item]);
+        $todo = Todo::index($request->create);
+        return view('edit', ['form' => $todo]);
     }
     public function update(Request $request)
     {
-        $param = [
-            'content' => $request->content,
-        ];
-        DB::table('todos')->where('id', $request->id)->update($param);
+        $this->validate($request, Todo::$rules);
+        $form = $request->all();
+        unset($form['_token']);
+        Todo::where('create', $request->create)->update($form);
         return redirect('/');
     }
+
+
+
+
     public function delete(Request $request)
     {
-        $item = DB::table('todos')->where('id', $request->id)->first();
-        return view('delete', ['form' => $item]);
+        $todo = todo::index($request->id);
+        return view('delete', ['form' => $todo]);
     }
     public function remove(Request $request)
     {
-        $param = ['id' => $request->id];
-        DB::table('todos')->where('id', $request->id)->delete();
+        Todo::index($request->id)->delete();
         return redirect('/');
     }
 }
