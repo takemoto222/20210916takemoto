@@ -24,7 +24,7 @@ h2 {
 /*追加*/
 .writespace-block {
   height: 35px;
-  border-radius: 5px
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -76,6 +76,7 @@ th {
   border: 1px solid rgb(195, 192, 192);
 }
 
+/*更新*/
 .update {
   border: 2px solid #f49c65;
   color: #f49c65;
@@ -90,6 +91,8 @@ th {
   background-color: #f49c65;
   color: #fff;
 }
+
+/*削除*/
 .delete {
   border: 2px solid #99f9ee;
   color: #99f9ee;
@@ -127,11 +130,11 @@ th {
 
 <!--更新ボタン-->
 
-    <td><input class="update" type="submit" name="update" value> </td>
+    <td><input class="update" type="submit" name="update" value="更新"> </td>
 
 <!--削除ボタン-->
 
-    <td><input class="delete" type="submit"  ></td>
+    <td><input class="delete" type="submit"  value="削除"></td>
 
   </tr>
 @endforeach
